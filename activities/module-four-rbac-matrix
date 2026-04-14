@@ -1,0 +1,43 @@
+# Module Four Activity: Role-Based Access Control (RBAC) Matrix
+**CYB-200 | Cybersecurity Foundations**
+
+## Objective
+Design an RBAC matrix for a healthcare organization and apply the **Least Privilege** principle to identify and remediate over-permissioned user accounts.
+
+---
+
+## RBAC Matrix — Healthcare Environment
+
+| User | Patient Information | Employee Information | SaaS Platform | Backup Logs |
+|---|---|---|---|---|
+| **Norman** (IT Admin) | None | View, Create, Modify, Delete | Create, Modify, Delete | View |
+| **Ryhead** (HR Coordinator) | None | None | View, Create | None |
+| **Simone** (Receptionist) | None | View | View | None |
+| **Janet** (Operations Manager) | None | View, Create, Modify, Delete | View, Create, Modify, Delete | View, Create, Modify, Delete |
+| **Dale** (Clinical Staff) | View, Create, Modify | None | View | None |
+| **Ethan** (Auditor) | View | None | View | View |
+
+---
+
+## Least Privilege Analysis & Recommendations
+
+### 🔴 Norman — Backup Log Access
+Norman's role as IT Admin justifies *viewing* backup logs for troubleshooting, but write/modify/delete access to backup logs is not required for his core function. Recommendation: **Reduce to View only** unless a specific operational need is documented and approved.
+
+### 🟡 Simone — SaaS Platform Access
+Simone's role as a receptionist may require limited SaaS access, but the scope of "View" should be further restricted to only the modules she actively uses. Recommendation: **Audit which SaaS modules are role-appropriate** and restrict access to those only.
+
+### 🔴 Janet — Backup Log Delete Access
+Janet's broad access to backup logs — including the ability to delete — presents a significant risk. Backup log deletion could be used to cover tracks in a security incident. Recommendation: **Remove Delete permission from backup logs**; only a dedicated backup administrator should hold this right, and ideally with dual authorization.
+
+---
+
+## Least Privilege Principle Summary
+> *Every user should have access to the minimum resources necessary to perform their job — nothing more.*
+
+Enforcing least privilege reduces the blast radius of compromised accounts, limits insider threat opportunities, and ensures accountability through tightly scoped permissions.
+
+---
+
+## Skills Demonstrated
+`Role-Based Access Control (RBAC)` `Least Privilege` `Identity & Access Management` `Healthcare Data Security` `Access Review` `Security Policy`
