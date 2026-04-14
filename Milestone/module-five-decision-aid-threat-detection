@@ -1,0 +1,82 @@
+# Module Five Milestone: Decision Aid — Threat Detection Framework
+**CYB-200 | Cybersecurity Foundations**
+
+## Objective
+Develop a structured decision aid outlining best practices for detecting, characterizing, and countering threat actors across four key security domains.
+
+---
+
+## Threat Detection Framework
+
+### 1. 🎓 Awareness
+**Goal:** Ensure employees can recognize and respond to threats before they escalate.
+
+| Practice | Description |
+|---|---|
+| Security awareness training | Continuous programs educating staff on phishing, social engineering, and common attack vectors |
+| Simulated phishing campaigns | Periodic test emails to measure and improve employee recognition of phishing attempts |
+| Mock incident response drills | Tabletop and live exercises to prepare teams for real incidents |
+| Threat intelligence briefings | Keep employees informed of current and emerging threat trends |
+
+**Why it matters:** The human layer is often the weakest link. Awareness training directly reduces the success rate of social engineering attacks.
+
+---
+
+### 2. 🔍 Auditing
+**Goal:** Create accountability and verify that security policies are being followed.
+
+| Practice | Description |
+|---|---|
+| Log reviews | Regularly analyze system, network, and application logs for anomalies |
+| Compliance audits | Verify adherence to regulatory requirements (HIPAA, NIST, etc.) and internal policies |
+| Access control audits | Confirm only authorized personnel hold access to sensitive resources |
+| Third-party vendor audits | Assess the security posture of external partners and software providers |
+
+**Why it matters:** Auditing catches drift — the slow divergence from security baselines that creates exploitable gaps over time.
+
+---
+
+### 3. 📡 Monitoring
+**Goal:** Achieve real-time visibility into system and network activity to detect threats as they happen.
+
+| Tool/Method | Function |
+|---|---|
+| **IDS/IPS** (Intrusion Detection/Prevention Systems) | Track and alert/block suspicious network traffic |
+| **SIEM** (Security Information & Event Management) | Correlate and analyze security events across systems in real time |
+| **EDR** (Endpoint Detection & Response) | Monitor endpoint activity for signs of malicious behavior |
+| **NTA** (Network Traffic Analysis) | Identify traffic anomalies indicative of active attacks |
+| **UEBA** (User & Entity Behavior Analytics) | Detect insider threats by flagging deviations from normal user behavior |
+
+**Why it matters:** Monitoring closes the detection gap between when an attack begins and when it's discovered. SIEM and UEBA together are particularly effective for identifying sophisticated, slow-moving threats.
+
+---
+
+### 4. 🧪 Testing
+**Goal:** Proactively find vulnerabilities before attackers do.
+
+| Method | Description |
+|---|---|
+| Penetration testing | Simulate real-world attacks to identify exploitable vulnerabilities |
+| Vulnerability scanning | Automated discovery of known weaknesses in systems and applications |
+| Bug bounty programs | Invite external security researchers to find and responsibly disclose vulnerabilities |
+| Red team exercises | Full-scope attack simulations to test detection and response capabilities |
+
+**Why it matters:** Testing validates that controls work — not just that they exist. Regular testing transforms security from a checkbox into a continuously validated posture.
+
+---
+
+## Framework Summary
+
+```
+DETECT → CHARACTERIZE → COUNTER
+
+Awareness   →   Know what to look for
+Auditing    →   Verify what has happened
+Monitoring  →   See what is happening now
+Testing     →   Find weaknesses before attackers do
+```
+
+---
+
+## Skills Demonstrated
+`Threat Detection Strategy` `SIEM` `IDS/IPS` `UEBA` `EDR` `Penetration Testing` `Security Auditing` `Awareness Program Design` `Proactive Security`
